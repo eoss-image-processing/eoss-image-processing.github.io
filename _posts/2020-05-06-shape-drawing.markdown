@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "Interactive annotations and shape drawing in plotly figures"
+title:  "Interactive annotations and shape drawing in plotly figures and Dash
+apps"
 date:   2020-05-06
 author:	Emmanuelle Gouillart
 categories: jekyll update
