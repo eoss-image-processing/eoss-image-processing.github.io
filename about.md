@@ -18,7 +18,7 @@ community support.
 
 * [Emmanuelle Gouillart](https://twitter.com/EGouillart) (PI)
 * [Nicholas Esterer](https://github.com/nicholas-esterer)
-* [Nicholas Kruchten](https://twitter.com/nicolaskruchten)
+* [Nicolas Kruchten](https://twitter.com/nicolaskruchten)
 * [Marianne Corvellec](https://github.com/mkcor)
 * [Mojtaba Samimi](https://github.com/archmoj)
 
