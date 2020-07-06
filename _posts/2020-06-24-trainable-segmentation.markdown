@@ -85,10 +85,9 @@ slider for the sigma parameter.
 To build the training set, we use the [new shape drawing capabilities
 of plotly.py](https://eoss-image-processing.github.io/jekyll/update/2020/05/06/shape-drawing.html)
 and in particular the `drawopenpath` dragmode which can used to draw
-"squiggles" on parts of the image which you want to label. In order to optimize
-the annotation time, the width of the squiggle is adjusted with a Dash
-`dcc.Slider`. Each time a new annotation is drawn, it is [captured thanks to a
-relayoutData event of the plotly figure which triggers a callback](https://dash.plotly.com/interactive-graphing).
+"squiggles" on parts of the image which you want to label. The width of the squiggle can be adjusted with a Dash
+`dcc.Slider` to make it possible to annotate features of different sizes. Each time a new annotation is drawn, it is [captured by the plotly figure's
+relayoutData event, which triggers a callback]](https://dash.plotly.com/interactive-graphing).
 
 ## Model training and prediction
 
