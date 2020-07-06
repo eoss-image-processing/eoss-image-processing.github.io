@@ -91,7 +91,7 @@ relayoutData event, which triggers a callback]](https://dash.plotly.com/interact
 
 ## Model training and prediction
 
-Features are extracted for the annotated pixels, and passed to a scikit-learn [Random Forest Classifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html). This estimator belongs to the class of [ensemble methods](https://scikit-learn.org/stable/modules/ensemble.html), where the predictions of several base estimators are combined to improve the generalizability or robustness of the prediction. After the model is trained, its prediction is computed on unlabeled pixels, resulting in a segmentation of the image. It is possible to add more annotations to improve the segmentation if some pixels are wrongly classified. Furthermore, one can download the estimator in order to classify new images of the same type (for example a time series).
+Features are extracted for the annotated pixels, and passed to a scikit-learn [Random Forest Classifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html). This estimator belongs to the class of [ensemble methods](https://scikit-learn.org/stable/modules/ensemble.html), where the predictions by several base estimators are combined to improve the generalizability or robustness of the prediction. After the model is trained, its prediction is computed on unlabeled pixels, resulting in a segmentation of the image. It is possible to add more annotations to improve the segmentation if some pixels are wrongly classified. Furthermore, one can download the estimator in order to classify new images of the same type (for example, a time series).
 
 ## What's next?
 
