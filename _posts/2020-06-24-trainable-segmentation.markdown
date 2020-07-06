@@ -82,7 +82,7 @@ slider for the sigma parameter.
 
 ![screenshot of app showing image and control panel](/assets/trainable_segmentation_panel.png)
 
-In order to build the training set, we use the [new shape drawing capabilities
+To build the training set, we use the [new shape drawing capabilities
 of plotly.py](https://eoss-image-processing.github.io/jekyll/update/2020/05/06/shape-drawing.html)
 and in particular the `drawopenpath` dragmode which can used to draw
 "squiggles" on parts of the image which you want to label. In order to optimize
