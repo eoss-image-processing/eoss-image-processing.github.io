@@ -41,7 +41,7 @@ training is very resource-intensive. We instead use local features which, for ea
 - measures of local texture in this region
 
 Such features are computed by first convolving the image of interest with a Gaussian
-kernel, and then measuring the local intensity, gradient intensity, or the
+kernel, and then measuring the local color intensity, gradient intensity, or the
 eigenvalues of the Hessian matrix. Conveniently, these operations are provided
 by the [`filters` module of `scikit-image`](https://scikit-image.org/docs/stable/api/skimage.filters.html) and are relatively fast, since they
 operate on local neighbourhoods. 
