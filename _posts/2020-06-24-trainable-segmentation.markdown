@@ -98,6 +98,6 @@ Features are extracted for the annotated pixels, and passed to a scikit-learn [R
 We hope you like this app. Suggestions are welcome, and can be submitted via the [source
 repo](https://github.com/plotly/dash-sample-apps/) or [on Twitter](https://twitter.com/EGouillart). 
 
-There is an [open pull request in scikit-image](https://github.com/scikit-image/scikit-image/pull/4739) to integrate into scikit-image the code in order to extract features, train the classifier and predict the class of unlabeled pixels. If the PR is accepted, the image processing code will consist only of calling two scikit-image functions, which parameters correspond directly to the elements of the user interface in the Dash application. 
+There is an [open pull request in scikit-image](https://github.com/scikit-image/scikit-image/pull/4739) to integrate the code into scikit-image in order to extract features, train the classifier and predict the class of unlabeled pixels. If the PR is accepted, the image processing code will consist only of calling two scikit-image functions, whose parameters correspond directly to the elements of the user interface in the Dash application.
 
 For more image-related interactive applications, checkout the [Dash gallery](https://dash-gallery.plotly.host/Portal/?search=image)!
