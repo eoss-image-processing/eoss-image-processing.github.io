@@ -38,7 +38,7 @@ image processing. Nevertheless, they require a large training set and their
 training is very resource-intensive. We instead use local features which, for each pixel, represent
 - the average intensity in a small region around the pixel
 - the average magnitude of gradients in the same region
-- and measures of local texture in this region
+- measures of local texture in this region
 
 Such features are computed by first convolving the image of interest with a Gaussian
 kernel, and then measuring the local intensity, gradient intensity, or the
