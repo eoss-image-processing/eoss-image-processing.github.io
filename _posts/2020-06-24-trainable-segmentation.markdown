@@ -1,9 +1,7 @@
 ---
 layout: post
 title:  "Trainable image segmentation using Dash, scikit-image and scikit-learn"
-date:   2020-06-23
 author:	Nicholas Esterer and Emmanuelle Gouillart
-categories: jekyll update
 ---
 
 **TL; DR**: checkout [our new image processing app performing interactive image
@@ -28,7 +26,7 @@ With the different libraries of the scientific Python ecosystem, such as
 [scikit-image](https://scikit-image.org/) and [scikit-learn](https://scikit-learn.org/stable/),
 and [Dash](https://dash.plotly.com/) to build an interactive app in pure
 Python, it is possible to build a highly-customizable app which you can
-integrate into your specific workflow. And all in Python! 
+integrate into your specific workflow. And all in Python!
 
 ## Image annotation and feature selection
 
@@ -44,7 +42,7 @@ Such features are computed by first convolving the image of interest with a Gaus
 kernel, and then measuring the local color intensity, gradient intensity, or the
 eigenvalues of the Hessian matrix. Conveniently, these operations are provided
 by the [`filters` module of `scikit-image`](https://scikit-image.org/docs/stable/api/skimage.filters.html) and are relatively fast, since they
-operate on local neighbourhoods. 
+operate on local neighbourhoods.
 
 ```python
 import numpy as np
@@ -69,16 +67,16 @@ def _singlescale_basic_features(img, sigma, intensity=True, edges=True,
         for eigval_mat in eigvals:
             features.append(eigval_mat)
     return features
-``` 
+```
 
 These local features can be computed for each color channel of the image and
 for different scales `sigma`. Large `sigmas` are useful to capture variations
 characteristic of textures but they will make it harder to classify pixels
 lying close to the boundary between objects. Users can modify the set of
 features in a control panel thanks to interactive elements from
-[dash-core-components](https://dash.plotly.com/dash-core-components): 
+[dash-core-components](https://dash.plotly.com/dash-core-components):
 a checklist for the type of features and a range
-slider for the sigma parameter. 
+slider for the sigma parameter.
 
 ![screenshot of app showing image and control panel](/assets/trainable_segmentation_panel.png)
 
@@ -96,7 +94,7 @@ Features are extracted for the annotated pixels, and passed to a scikit-learn [R
 ## What's next?
 
 We hope you like this app. Suggestions are welcome, and can be submitted via the [source
-repo](https://github.com/plotly/dash-sample-apps/) or [on Twitter](https://twitter.com/EGouillart). 
+repo](https://github.com/plotly/dash-sample-apps/) or [on Twitter](https://twitter.com/EGouillart).
 
 There is an [open pull request in scikit-image](https://github.com/scikit-image/scikit-image/pull/4739) to integrate the code into scikit-image in order to extract features, train the classifier and predict the class of unlabeled pixels. If the PR is accepted, the image processing code will consist only of calling two scikit-image functions, whose parameters correspond directly to the elements of the user interface in the Dash application.
 

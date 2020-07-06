@@ -2,9 +2,7 @@
 layout: post
 title:  "CZI is funding scikit-image and Dash to develop interactive image
 processing!"
-date:   2020-01-10
 author:	Emmanuelle Gouillart
-categories: jekyll update
 ---
 
 
@@ -23,7 +21,7 @@ The project has several work packages
 
 - maintenance, community support and documentation
 - acceleration of interactive image processing, with parallelization and
-  caching 
+  caching
 - development of interactive annotation tools, for example for semi-supervized
   image segmentation or for building a training set of instances for machine
 learning models.

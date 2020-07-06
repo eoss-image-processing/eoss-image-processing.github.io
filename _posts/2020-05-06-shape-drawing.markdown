@@ -2,12 +2,10 @@
 layout: post
 title:  "Interactive annotations and shape drawing in plotly figures and Dash
 apps"
-date:   2020-05-06
 author:	Emmanuelle Gouillart
-categories: jekyll update
 ---
 
-The new 4.7 release of plotly.py includes new layout dragmodes for users to be able to draw shapes such as rectangles, lines, open or closed paths etc. These shapes can also be modified or deleted when activated. In particular, this feature should make it easy to annotate images for measuring objects properties or building training sets for neural nets. 
+The new 4.7 release of plotly.py includes new layout dragmodes for users to be able to draw shapes such as rectangles, lines, open or closed paths etc. These shapes can also be modified or deleted when activated. In particular, this feature should make it easy to annotate images for measuring objects properties or building training sets for neural nets.
 
 ![shape drawing](/assets/shape_drawing.gif)
 
@@ -59,7 +57,7 @@ fig.update_layout(dragmode='drawline', newshape_line_color='cyan')
 
 app.layout = html.Div(children=[
         dcc.Graph(
-            id='graph', 
+            id='graph',
             figure=fig,
             config={'modeBarButtonsToAdd':['drawline']}),
         html.Pre(id='content', children='Length of lines (pixels) \n')
