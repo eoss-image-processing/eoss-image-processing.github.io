@@ -35,8 +35,7 @@ integrate into your specific workflow. And all in Python!
 In machine learning, a sample is represented as a vector of *features*. Deep
 learning models learn features directly from the data and are very popular for
 image processing. Nevertheless, they require a large training set and their
-training is very resource-intensive. We use instead local features representing
-for each pixel
+training is very resource-intensive. We instead use local features which, for each pixel, represent
 - the average intensity in a small region around the pixel
 - the average magnitude of gradients in the same region
 - and measures of local texture in this region
