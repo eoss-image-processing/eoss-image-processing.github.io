@@ -13,10 +13,9 @@ segmentation](https://dash-gallery.plotly.host/dash-image-segmentation/)! Its
 ![animation showing the annotation of an image and the resulting segmentation](/assets/segmentation_cut.gif)
 
 [Image segmentation](https://en.wikipedia.org/wiki/Image_segmentation) is the
-process of partioning an image into multiple objects. It is a classical image
-processing task in various fields of science and technology. There exists a
-very large number of possible strategies for image segmentation, as exemplified
-by the [scikit-image gallery of examples on segmentation](https://scikit-image.org/docs/stable/auto_examples/#segmentation-of-objects). However, a wide class of segmentation methods relies on machine learning and deep learning, where an algorithm uses a *training set* of already labeled pixels to determine the class of unlabeled pixels. In this setting the image segmentation task boils down to a [classification](https://en.wikipedia.org/wiki/Statistical_classification) task.
+process of partitioning an image into multiple objects. It is a classical image
+processing task in various fields of science and technology. There are many possible strategies for image segmentation, as exemplified
+by the [scikit-image gallery of examples on segmentation](https://scikit-image.org/docs/stable/auto_examples/#segmentation-of-objects). However, a large class of segmentation methods relies on machine learning and deep learning, where an algorithm uses a *training set* of already labeled pixels to determine the class of unlabeled pixels. In this setting the image segmentation task boils down to a [classification](https://en.wikipedia.org/wiki/Statistical_classification) task.
 
 We have built a simple [Dash app](https://dash.plotly.com/) to train a machine learning model based on
 user-annotated regions, and to classify the remaining pixels. This is the same
