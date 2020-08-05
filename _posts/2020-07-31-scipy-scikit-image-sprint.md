@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "scikit-image sprint at Scipy "
+title:  "scikit-image sprint at Scipy 2020"
 author:	Emmanuelle Gouillart
 ---
 
 ![group picture of sprint attendees - including toddlers!](/assets/sprint_scikit_image.png)
 
 On July 18-19, we've had our first all-remote scikit-image sprint, as part of
-the scipy conferences. Of course we missed seeing old friends and meeting new
+the scipy conference. Of course we missed seeing old friends and meeting new
 ones around the Scipy BBQ, but this remote sprint has been a great experience
 and brought many useful contributions to the project. Here are a few take-aways
 from this sprint.
@@ -15,7 +15,7 @@ from this sprint.
 - All-remote means that all participants are on an equal footing: when
   sprinting at a conference, core devs tend to pay more attention to people in
   the same room than to people who are sprinting remotely, or to people they
-  know better / who are more self-confident to ask questions, etc. Here all
+  know better / who are more confident to ask questions, etc. Here all
   conversations were taking place on [our Zulip chat forum](https://skimage.zulipchat.com/#narrow/stream/176555-sprint), 
   which made conversations more "distributed", with everybody being able to
   ask questions or chime in on specific topics.
@@ -24,7 +24,7 @@ from this sprint.
   go through our list on open issues before the sprint and label some as "good
 first issue" or "sprint". By "good first issue" we often think of issues
 adapted to contributors who are starting to contribute to open source in
-general. In a sprint, however, first-time contributors can already have a lot
+general. In a sprint, however, first-time contributors *to your project* may already have a lot
 of experience in other domains, and it's worth labeling a few issues for this
 type of contributors. This is how we've been lucky to have a very experienced
 developer and new contributor writing our first Github action for an improved deployment of the
