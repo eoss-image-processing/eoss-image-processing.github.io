@@ -79,8 +79,7 @@ are simply added to the figure's layout so that they are displayed to the user.
 ## Interactive data table
 
 Annotations can be modified either in the figure or in the interactive data
-table, which are all updated thanks to a specific callback, and a `dcc.Store`
-component with the data of the annotations. For example if you draw an
+table, because the `modify_table_entries` callback, with the graph's `relayoutData` as input, is chained to the `send_figure_to_graph` callback, which has the table's `data` as input, while the annotation data is stored in a `dcc.Store`.  This way the `send_figure_to_graph` callback is indifferent to the history of user interaction: it updates the graph if the table was changed or if the graph was drawn on. For example if you draw an
 annotation with the wrong label (say "car" instead of "tree"), the easiest way to
 correct this is to use the "Type" dropdown in the table. This will update the
 color of the annotation in the figure, and the `dcc.Store`. 
