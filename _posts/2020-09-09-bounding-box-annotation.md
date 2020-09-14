@@ -72,7 +72,7 @@ batches of images.
 
 Conversely, when navigating back to an image previously annotated, the plotly
 figure is the `Output` of a callback, and annotations retrieved from the `dcc.Store`
-are simply added to the figure layout so that they are displayed to the user.
+are simply added to the figure's layout so that they are displayed to the user.
 
 
 
