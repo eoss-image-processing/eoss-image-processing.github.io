@@ -6,7 +6,7 @@ author:	Sebastian Urchs and Emmanuelle Gouillart
 
 ![Screenshot of region properties app](/assets/region-properties-app.png)
 
-Image processing workflows generate multimodal information that need to be explored and interpreted. For example, with skimage we can build a lightweight image segmentation workflow and compute properties of the segmented regions in the image. We may want to look at the segmented regions in an interactive visualization such as px.imshow, but we may want to look at the computed region properties in a table where we can sort and search values. Here we have built a dash app that combines the best of both worlds by interactively linking visual and tabular data.
+Image processing workflows generate multimodal information that need to be explored and interpreted. For example, with scikit-image we can build a lightweight image segmentation workflow and compute properties of the segmented regions in the image. We may want to look at the segmented regions in an interactive visualization such as plotly's`px.imshow`, but we may want to look at the computed region properties in a table where we can sort and search values. Here we have built a Dash app that combines the best of both worlds by interactively linking visual and tabular data.
 
 You can [explore this app](https://dash-gallery.plotly.host/dash-label-properties/) in the [dash app gallery](https://dash-gallery.plotly.host/Portal/) and find the [source code](https://github.com/plotly/dash-sample-apps/tree/master/apps/dash-label-properties) in the [dash-sample-apps repository on github](https://github.com/plotly/dash-sample-apps).
 
@@ -79,7 +79,7 @@ For the same reason we have choosen here to compute the contours of the labeled 
     - the points of the computed contour trace
     - a single string with the hover info
 
-We could have achieved a similar outcome in fewer lines of code by using the [plotly Contour traces](https://plotly.com/python/reference/contour/#contour). The downside of this approach is, that not only do we need to send the full labeled image array over the network, we also ask the browser to compute the contours of this labeled array for us. This can be a good solution for a local application but it can become slow quite quickly in a dash app.
+We could have achieved a similar outcome in fewer lines of code by using the [plotly Contour traces](https://plotly.com/python/reference/contour/#contour). The downside of this approach is, that not only do we need to send the full labeled image array over the network, we also ask the browser to compute the contours of this labeled array for us. While this solution is acceptable for medium-sized arrays, we get a better performance with our solution for large image arrays and deployed apps.
 
 
 ## Interactive Datatable and Dash callbacks
