@@ -1,10 +1,9 @@
 ---
 layout: post
 title:  "Annotating 3D imaging data with Dash, scikit-image, and superpixels"
-author:	Sebastian Urchs and Emmanuelle Gouillart
+author:	Nicholas Esterer, Emmanuelle Gouillart, and Sebastian Urchs
 ---
 ![short animation showing some functions of a superpixel app](/assets/superpixel_app.gif)
-
 
 A common way to display three-dimensional, volumetric medical imaging data is to take two-dimensional slices along the main axes of the image and display them side by side. In a dash app, we can give the user the ability to interactively control the position of these slices and thus move freely through the volume. This is a good way to quickly and intuitively explore a three-dimensional volume. However, if we want to annotate regions that cross multiple slices, this can be laborious or even impractical, because the annotations will have to be manually repeated in each slice. 
 
