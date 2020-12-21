@@ -86,3 +86,4 @@ point and adapt it for your own needs. You might also want to check out the othe
 
 - the new [`Dash-Slicer` component](https://github.com/plotly/dash-slicer) that makes it [very easy to build interactive 3D image slicers](https://dash.plotly.com/slicer) in Dash in only a few lines of code
 - the new [functionality for image annotation in Dash](https://dash.plotly.com/annotations) and the corresponding [Blogpost](https://eoss-image-processing.github.io/2020/05/06/shape-drawing.html)
+- our [Covid X-ray Dash app](https://dash-gallery.plotly.host/dash-covid-xray/) that showcases the new `Dash-Slicer` component and the corresponding [Blogpost](https://eoss-image-processing.github.io/2020/12/16/ct-app.html)
