@@ -20,7 +20,7 @@ To display the image slices, we create empty plotly Figure objects for each axis
 
 When a slider is moved to a new value, this triggers a clientside callback that will access the lists of image slices from the `Store` element, pick the image slice at the index selected by the slider-value, and then update the corresponding figures `layout.Image` parameter with it (i.e. update the currently visible background image). Because the necessary data is stored in a `Store` element and we are using a [`clientside_callback`](https://dash.plotly.com/clientside-callbacks), no data needs to be passed between the user's machine and the server to select a new slice. 
 
-The new dash-slicer Dash component packages the rather complex clientside callback functions into a simple to use component that allows you to achieve the same efficiency with only a few lines of code. Check it out here: https://dash.plotly.com/slicer.
+The new dash-slicer Dash component packages the rather complex clientside callback functions into a simple to use component that allows you to achieve the same efficiency with only a few lines of code. Check it out here: [https://dash.plotly.com/slicer](https://dash.plotly.com/slicer).
 
 
 ## Identifying and annotating superpixels
